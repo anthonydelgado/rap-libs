@@ -1,6 +1,6 @@
 var say = require('say');
 var inquirer = require('inquirer');
-
+var madlib = require('./madlib.js');
 // Use default system voice and speed
 // say.speak('Hello! Lets start the game.');
 
@@ -61,20 +61,16 @@ inquirer.prompt([
         message: '(Noun) Type of food.',
         name: 'gumbo'
     }
-]).then(function (promptdata) {
+]).then(function (d) {
 
 
 // Lyrics
 
-    var freestyle = 'Straight out of ' + promptdata.location + '. A crazy ' + promptdata.job + ' named ' + promptdata.name + '. From the gang called  ' + promptdata.nwa + '. When I am called off, I take my ' + promptdata.sawed + ' off. Squeeze the  ' + promptdata.trigger + '. and then ' + promptdata.bodies + ' are hauled off. You too, boy, if ya ' + promptdata.mess + ' with me. Off yo ' + promptdata.ass + '. thats how Im goin out. For the punk ' + promptdata.punk + ' that are showin out. start to mumble, they wanna rumble. Mix em and cook them in a pot like ' + promptdata.gumbo + '. Straight out of ' + promptdata.location;
+    var freestyle = new madlib(d.location, d.job, d.name, d.nwa, d.sawed, d.trigger, d.bodies, d.mess, d.ass, d.punk, d.gumbo);
 
-    console.log(freestyle);
+    console.log(freestyle.freestyle);
 
-    say.speak(freestyle);
-
-
-    // console.log('hello ' + user.name + ' from ' + user.location);
-
-    // console.log("Here is the weather in " + user.city);
+    say.speak(freestyle.freestyle);
+ 
 
 });
