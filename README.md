@@ -1,4 +1,7 @@
-# Rap Libs Karaoke!
+![YO NPM RAPS](https://github.com/anthonydelgado/rap-libs/raw/master/logo.jpg)
+
+
+# YO! NPM Raps!
 
 This is an Node CLI project that emulates the popular Mad Libs game with an early 90s hip-hop twist. 
  
