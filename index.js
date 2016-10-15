@@ -54,7 +54,7 @@ inquirer.prompt([
     {
         type: 'input',
         message: '(Noun Plural) Type of people.',
-        name: 'ass'
+        name: 'punk'
     },
     {
         type: 'input',
