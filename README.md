@@ -2,7 +2,7 @@
 
 This is an Node CLI project that emulates the popular Mad Libs game with an early 90s hip-hop twist. 
  
- ## Install dependencies 
+## Install dependencies 
   
   First, install the node dependencies. 
  ```
