@@ -23,3 +23,5 @@ This is an Node CLI project that emulates the popular Mad Libs game with an earl
 The user is then prompted and asked a series of questions in the CLI and after all of the questions have been answered we then use Text-to-speech technology to have the users computer speak back the NWA inspired mad lib freestyle.
 
 It is a lot of fun! Give it a try! 
+
+Watch a demo here: https://www.youtube.com/watch?v=17rHuAOrh-8
